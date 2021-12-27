@@ -3,7 +3,7 @@ class ContaBancaria{
         this.agencia = agencia
         this.numero = numero
         this.tipo = tipo
-        this._saldo = 250
+        this._saldo = 0
     }
     get saldo(){
         return `Seu saldo é de ${this._saldo} reais`
@@ -70,15 +70,7 @@ class ContaUniversitaria extends ContaBancaria{
     }
 }
 
-const gabriel = new ContaBancaria()
 
 
-console.log(gabriel.saldo)
 
-gabriel.sacar(50)
 
-console.log(gabriel.saldo)
-
-gabriel.depositar(100)
-
-console.log(gabriel.saldo)
